@@ -1,36 +1,10 @@
-import { useEffect, useState } from 'react';
+
 import { ContactForm } from './ContactForm/ContactForm';
 import { ContactList } from './ContactList/ContactList';
 import { Filter } from './Filter/Filter';
 
 //App
 function App() {
-  const [filter, setFilter] = useState('');
-  const [isMounted, setIsMounted] = useState(false);
-
-  // useEffect(() => {
-  //   setIsMounted(true);
-  //   getLocalStorage();
-  // }, []);
-
-  // useEffect(() => {
-  //   if (!isMounted) return;
-
-  //   setLocalStorage();
-  // }, [contacts]);
-
-  // const getLocalStorage = () => {
-  //   const contactsArr = JSON.parse(localStorage.getItem('contacts'));
-
-  //   if (!contactsArr) return;
-
-  //   setContacts(contactsArr);
-  // };
-
-  // const setLocalStorage = () => {
-  //   localStorage.setItem('contacts', JSON.stringify(contacts));
-  // };
-
   return (
     <div
       style={{
